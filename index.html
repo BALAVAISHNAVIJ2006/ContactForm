@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Get in Touch</h1>
+        <p class="subtitle">We'd love to hear from you. Fill out the form below and we'll get back to you soon.</p>
+        
+        <form id="contactForm" novalidate>
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+                <div class="error-message" id="nameError">Please enter your name</div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com">
+                <div class="error-message" id="emailError">Please enter a valid email address</div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Tell us what's on your mind..."></textarea>
+                <div class="char-count"><span id="charCount">0</span> / 500 characters</div>
+                <div class="error-message" id="messageError">Please enter your message</div>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            ✓ Thank you! Your message has been sent successfully.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
